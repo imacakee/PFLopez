@@ -8,6 +8,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
 /* Home */
 header {
   width: 100%;
@@ -44,7 +52,7 @@ main {
   text-align: center;
 }
 
-.home-carousel{
+.home-carousel {
   height: 600px;
   width: 100%;
 }
@@ -69,18 +77,18 @@ main {
 .clothing-piece {
   padding: 20px;
   display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .clothing-piece img {
   height: 200px;
   width: 200px;
-  flex-direction: column;
-  margin-right: 10px;
 }
 
 .clothing-piece p {
   text-align: left;
-  margin: 50px;
+  /* height: min-content; */
 }
 
 .inspo-section-container-model {
@@ -147,6 +155,7 @@ footer i {
 .nosotras-info {
   padding: 20px;
   display: flex;
+  align-items: center;
 }
 
 .nosotras-info img {
@@ -154,13 +163,8 @@ footer i {
   width: 700px;
   margin-right: 10px;
 }
-
-.nosotras-info .hand-heart {
-  align-self: self-end;
-}
-
 .nosotras-info p {
-  text-align: left;
+  text-align: justify;
   margin: 50px;
 }
 
@@ -193,6 +197,9 @@ footer i {
 }
 
 .formulario-section fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   text-align: left;
   width: 60%;
   margin: auto;
@@ -200,13 +207,23 @@ footer i {
   padding-bottom: 30px;
 }
 
+.formulario-section input {
+  width: 500px;
+}
+
 .formulario-section fieldset textarea {
   width: 97%;
 }
 
-.formulario-section fieldset .button-contacto {
-  float: right;
-  margin-right: 20px;
+.input-button-contacto {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.formulario-section .button-contacto {
+  width: 150px;
 }
 
 /* Donaciones */
@@ -250,43 +267,48 @@ footer i {
 }
 
 .formulario-donaciones-sec .button-contacto {
-  display: flex;
-  justify-content: flex-end;
+  float: right;
   margin-right: 20px;
 }
 
 /* Prendas */
+.catalogo-section {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 20px;
+}
 
 .filtro-bar {
+  display: flex;
   font-size: 30px;
-  width: 1200px;
+  width: 100%;
   margin: auto;
-  padding: 20px;
 }
 
-.filtro-bar i {
+.filtrado {
+  flex: 1;
   display: flex;
-}
-
-.filtro-bar input {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 10px;
 }
 
 .catalogo-container {
-  padding: 60px;
-}
-
-.catalogo-row {
-  display: inline-block;
-  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(3, 400px);
 }
 
 .catalogo-text {
-  padding: 15px;
-  float: left;
-  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalogo-text p {
+  width: 250px;
+  text-align: justify;
 }
 
 .catalogo-text img {
