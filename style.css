@@ -133,6 +133,10 @@ footer {
   font-size: 20px;
 }
 
+.footer-text .input-container{
+  display: flex;
+}
+
 .footer-redes {
   font-size: 40px;
   flex: 1;
@@ -331,14 +335,29 @@ footer i {
 
 /* Mobile view */
 
-
 @media only screen and (max-width: 720px) {
+  /* Footer */
+  footer{
+    flex-wrap: wrap;
+  }
+
+  .footer-redes{
+    order: -1;
+  }
+
+  .footer-text{
+    flex-basis: 100%;
+    flex-direction: column;
+  }
+
+  /* Header */
   /* Aquí iría menú hamburguesa */
   .logo,
   .redes {
     display: none;
   }
 
+  /* Prendas */
   .catalogo-section {
     width: 100%;
   }
