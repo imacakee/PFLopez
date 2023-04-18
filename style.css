@@ -53,7 +53,7 @@ main {
 }
 
 .home-carousel {
-  height: 600px;
+  /* height: 600px; */
   width: 100%;
 }
 
@@ -133,7 +133,7 @@ footer {
   font-size: 20px;
 }
 
-.footer-text .input-container{
+.footer-text .input-container {
   display: flex;
 }
 
@@ -337,24 +337,35 @@ footer i {
 
 @media only screen and (max-width: 720px) {
   /* Footer */
-  footer{
+  footer {
     flex-wrap: wrap;
   }
 
-  .footer-redes{
+  .footer-redes {
     order: -1;
+    flex: 1.9;
+    justify-content: flex-end;
   }
 
-  .footer-text{
+  .footer-text {
     flex-basis: 100%;
     flex-direction: column;
   }
 
+  footer i {
+    margin-right: 15px;
+  }
+
+  .footer-maps {
+    justify-content: flex-start;
+  }
+
   /* Header */
-  /* Aquí iría menú hamburguesa */
+  /* Aquí iría un menú hamburguesa, mientras tanto se oculta logo y redes */
   .logo,
   .redes {
     display: none;
+    font-size: 30px;
   }
 
   /* Prendas */
@@ -377,6 +388,25 @@ footer i {
     width: 150px;
     font-size: 12px;
   }
+
+  /* Home  */
+
+  .home-carousel img{
+    height: 85.5vh;
+  }
+
+  .clothing-piece {
+    flex-direction: column;
+  }
+
+  .clothing-piece p {
+    font-size: 10px;
+  }
+
+  .inspo-section-container-model {
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 325px) {
@@ -384,3 +414,4 @@ footer i {
     grid-template-columns: auto;
   }
 }
+
