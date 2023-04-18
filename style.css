@@ -264,8 +264,8 @@ footer i {
   padding-bottom: 30px;
 }
 
-.formulario-donaciones-sec input{
-width: 500px;
+.formulario-donaciones-sec input {
+  width: 500px;
 }
 
 .formulario-donaciones-sec textarea {
@@ -280,7 +280,7 @@ width: 500px;
 }
 
 .formulario-donaciones-sec .button-donaciones {
-width: 150px;
+  width: 150px;
 }
 
 /* Prendas */
@@ -327,4 +327,41 @@ width: 150px;
   width: 250px;
   height: 250px;
   object-fit: cover;
+}
+
+/* Mobile view */
+
+
+@media only screen and (max-width: 720px) {
+  /* Aquí iría menú hamburguesa */
+  .logo,
+  .redes {
+    display: none;
+  }
+
+  .catalogo-section {
+    width: 100%;
+  }
+
+  .catalogo-container {
+    grid-template-columns: auto auto;
+    grid-template-rows: unset;
+    gap: 25px;
+  }
+
+  .catalogo-text img {
+    width: 150px;
+    height: 200px;
+  }
+
+  .catalogo-text p {
+    width: 150px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .catalogo-container {
+    grid-template-columns: auto;
+  }
 }
