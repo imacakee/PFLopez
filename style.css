@@ -38,9 +38,6 @@ header {
   list-style: none;
   display: inline;
 }
-.redes {
-
-}
 
 main {
   width: 100%;
@@ -71,13 +68,13 @@ main {
 
 .clothing-piece {
   padding: 20px;
-  display: inline-block;
+  display: flex;
 }
 
 .clothing-piece img {
   height: 200px;
   width: 200px;
-  float: left;
+  flex-direction: column;
   margin-right: 10px;
 }
 
@@ -149,18 +146,17 @@ footer i {
 
 .nosotras-info {
   padding: 20px;
-  display: inline-block;
+  display: flex;
 }
 
 .nosotras-info img {
   height: 500px;
   width: 700px;
-  float: left;
   margin-right: 10px;
 }
 
 .nosotras-info .hand-heart {
-  float: right;
+  align-self: self-end;
 }
 
 .nosotras-info p {
@@ -254,7 +250,8 @@ footer i {
 }
 
 .formulario-donaciones-sec .button-contacto {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
   margin-right: 20px;
 }
 
@@ -268,11 +265,12 @@ footer i {
 }
 
 .filtro-bar i {
-  float: left;
+  display: flex;
 }
 
 .filtro-bar input {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
   margin-top: 10px;
 }
 
