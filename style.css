@@ -88,7 +88,6 @@ main {
 
 .clothing-piece p {
   text-align: left;
-  /* height: min-content; */
 }
 
 .inspo-section-container-model {
@@ -188,7 +187,7 @@ footer i {
   margin: auto;
   margin-top: 5px;
   width: 60%;
-  text-align: center;
+  text-align: justify;
 }
 
 .formulario-section {
@@ -246,7 +245,7 @@ footer i {
   margin: auto;
   margin-top: 5px;
   width: 60%;
-  text-align: center;
+  text-align: justify;
 }
 
 .formulario-donaciones-sec {
@@ -255,6 +254,9 @@ footer i {
 }
 
 .formulario-donaciones-sec fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   text-align: left;
   width: 60%;
   margin: auto;
@@ -262,13 +264,23 @@ footer i {
   padding-bottom: 30px;
 }
 
+.formulario-donaciones-sec input{
+width: 500px;
+}
+
 .formulario-donaciones-sec textarea {
   width: 97%;
 }
 
-.formulario-donaciones-sec .button-contacto {
-  float: right;
-  margin-right: 20px;
+.input-button-donaciones {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.formulario-donaciones-sec .button-donaciones {
+width: 150px;
 }
 
 /* Prendas */
