@@ -310,6 +310,15 @@ footer i {
   display: flex;
 }
 
+.filtrado input {
+  width: 150px;
+  height: 30px;
+  font-size: 14px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 7px;
+}
+
 .catalogo-container {
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -391,7 +400,7 @@ footer i {
 
   /* Home  */
 
-  .home-carousel img{
+  .home-carousel img {
     height: 85.5vh;
   }
 
@@ -406,7 +415,6 @@ footer i {
   .inspo-section-container-model {
     display: none;
   }
-
 }
 
 @media only screen and (max-width: 325px) {
@@ -414,4 +422,3 @@ footer i {
     grid-template-columns: auto;
   }
 }
-
