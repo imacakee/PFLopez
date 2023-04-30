@@ -25,6 +25,16 @@
   margin-top: 60px;
   @include flex($justify: center, $align: center);
 
+  @include tablet {
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    .form-row{
+      flex-direction: column;
+    }
+  }
+
   form {
     width: 60%;
   }
