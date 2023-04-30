@@ -1,0 +1,26 @@
+@import "general/variables";
+
+@import "general/mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@import "general/header";
+
+main {
+  width: 100%;
+}
+
+@import "pages/home";
+@import "pages/prendas";
+@import "pages/donaciones";
+@import "pages/nosotras";
+@import "pages/contacto";
+@import "general/footer";

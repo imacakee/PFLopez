@@ -1,0 +1,59 @@
+.home-carousel {
+  width: 100%;
+
+  img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @include tablet {
+    img {
+      height: 85.5vh;
+    }
+  }
+}
+
+.inspo-section {
+  @include flex();
+  padding: 20px;
+
+  .inspo-section-container {
+    @include flex($direction: column, $flex: 3);
+  }
+}
+
+.clothing-piece {
+  padding: 20px;
+  @include flex($align: center, $gap: 30px);
+
+  img {
+    height: 200px;
+    width: 200px;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  @include tablet {
+    flex-direction: column;
+
+    p {
+      font-size: 10px;
+    }
+  }
+}
+
+.inspo-section-container-model {
+  @include flex($flex: 1);
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}

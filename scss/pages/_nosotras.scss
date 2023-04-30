@@ -1,0 +1,23 @@
+.nosotras-section-container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  
+    .nosotras-info {
+      padding: 20px;
+      @include flex($align: center);
+  
+      img {
+        height: 500px;
+        width: 700px;
+        margin-right: 10px;
+      }
+      p {
+        text-align: justify;
+        margin: 50px;
+      }
+    }
+    .row-reverse {
+      flex-direction: row-reverse;
+    }
+  }
+  

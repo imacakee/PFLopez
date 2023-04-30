@@ -1,0 +1,72 @@
+.catalogo-section {
+  margin: auto;
+  width: 80%;
+  margin-top: 20px;
+  @include flex($justify: center, $direction: column, $gap: 20px);
+
+  .filtro-bar {
+    @include flex();
+    font-size: 30px;
+    width: 100%;
+    margin: auto;
+
+    .filtrado {
+      @include flex($flex: 1);
+
+      input {
+        width: 150px;
+        height: 30px;
+        font-size: 14px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        padding: 7px;
+      }
+    }
+
+    .flex-end {
+      justify-content: flex-end;
+    }
+  }
+
+  .catalogo-container {
+    @include grid($columns: repeat(4, auto), $rows: repeat(3, 400px));
+
+    .catalogo-text {
+      @include flex($direction: column, $align: center);
+
+      p {
+        width: 250px;
+        text-align: justify;
+      }
+      img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  @include tablet {
+    width: 100%;
+
+    .catalogo-container {
+      @include grid($columns: auto auto, $rows: unset, $gap: 25px);
+
+      img {
+        width: 150px;
+        height: 200px;
+      }
+
+      p {
+        width: 150px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  @include mobile {
+    .catalogo-container {
+      @include grid();
+    }
+  }
+}
