@@ -18,9 +18,9 @@ main {
   width: 100%;
 }
 
-@import "pages/home";
-@import "pages/prendas";
-@import "pages/donaciones";
-@import "pages/nosotras";
-@import "pages/contacto";
+@import "../pages/home/home";
+@import "../pages/prendas/prendas";
+@import "../pages/donaciones/donaciones";
+@import "../pages/nosotras/nosotras";
+@import "../pages/contacto/contacto";
 @import "general/footer";
