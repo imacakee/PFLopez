@@ -5,19 +5,37 @@
     .nosotras-info {
       padding: 20px;
       @include flex($align: center);
+
+      @include responsive($tablet){
+        flex-direction: column;
+      }
   
       img {
         height: 500px;
         width: 700px;
         margin-right: 10px;
+
+        @include responsive($tablet){
+          height: 150px;
+          width: 350px;
+          object-fit: cover;
+        }
       }
       p {
         text-align: justify;
         margin: 50px;
+
+        @include responsive($tablet){
+          font-size: 12px;
+        }
       }
     }
     .row-reverse {
       flex-direction: row-reverse;
+
+      @include responsive($tablet){
+        flex-direction: column;
+      }
     }
   }
   

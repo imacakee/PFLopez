@@ -46,7 +46,7 @@
     }
   }
 
-  @include tablet {
+  @include responsive($tablet) {
     width: 100%;
 
     .catalogo-container {
@@ -64,7 +64,7 @@
     }
   }
 
-  @include mobile {
+  @include responsive($mobile) {
     .catalogo-container {
       @include grid();
     }

@@ -26,7 +26,7 @@
     width: 60%;
     text-align: justify;
 
-    @include tablet{
+    @include responsive($tablet){
       font-size: 12px;
       width: 100%;
     }
@@ -38,7 +38,7 @@
   margin-top: 60px;
   @include flex($justify: center, $align: center);
 
-  @include tablet {
+  @include responsive($tablet) {
     margin: 0;
     margin-top: 15px;
     margin-bottom: 15px;

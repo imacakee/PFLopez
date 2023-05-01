@@ -10,45 +10,6 @@ html {
 
 header {
   width: 100%;
-  height: 80px;
-  display: flex;
-  background-color: #fff;
-  font-size: 22px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-transform: capitalize;
-  padding: 20px;
-}
-header .logo {
-  color: black;
-  font-weight: bold;
-}
-@media screen and (max-width: 720px) {
-  header .logo {
-    display: none;
-    font-size: 30px;
-  }
-}
-header .barra {
-  margin: auto;
-  font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-transform: capitalize;
-  text-align: center;
-}
-header .barra li {
-  list-style: none;
-  display: inline;
-}
-header .redes i {
-  font-size: 30px;
-  letter-spacing: 20px;
-  color: black;
-}
-@media screen and (max-width: 720px) {
-  header .redes {
-    display: none;
-    font-size: 30px;
-  }
 }
 
 main {
@@ -298,17 +259,39 @@ main {
   flex: 0 1 auto;
   gap: 0px;
 }
+@media screen and (max-width: 720px) {
+  .nosotras-section-container .nosotras-info {
+    flex-direction: column;
+  }
+}
 .nosotras-section-container .nosotras-info img {
   height: 500px;
   width: 700px;
   margin-right: 10px;
 }
+@media screen and (max-width: 720px) {
+  .nosotras-section-container .nosotras-info img {
+    height: 150px;
+    width: 350px;
+    object-fit: cover;
+  }
+}
 .nosotras-section-container .nosotras-info p {
   text-align: justify;
   margin: 50px;
 }
+@media screen and (max-width: 720px) {
+  .nosotras-section-container .nosotras-info p {
+    font-size: 12px;
+  }
+}
 .nosotras-section-container .row-reverse {
   flex-direction: row-reverse;
+}
+@media screen and (max-width: 720px) {
+  .nosotras-section-container .row-reverse {
+    flex-direction: column;
+  }
 }
 
 .preguntas-frecuentes {

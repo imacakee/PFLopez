@@ -7,7 +7,7 @@
     object-fit: cover;
   }
 
-  @include tablet {
+  @include responsive($tablet) {
     img {
       height: 85.5vh;
     }
@@ -36,7 +36,7 @@
     text-align: left;
   }
 
-  @include tablet {
+  @include responsive($tablet) {
     flex-direction: column;
 
     p {
@@ -53,7 +53,7 @@
     object-fit: cover;
   }
 
-  @include tablet {
+  @include responsive($tablet) {
     display: none;
   }
 }
