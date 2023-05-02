@@ -40,8 +40,8 @@
     margin: 0;
     margin-top: 15px;
     margin-bottom: 15px;
-    
-    .form-row{
+
+    .form-row {
       flex-direction: column;
     }
   }
@@ -49,14 +49,14 @@
   form {
     width: 60%;
   }
+
+  button {
+    background-color: rgb(122, 122, 13);
+    border: none;
+
+    &:hover {
+      background-color: rgb(81, 81, 27);
+    }
+  }
 }
 
-.input-button-contacto {
-  width: 100%;
-  @include flex($justify: flex-end);
-  padding-right: 20px;
-}
-
-.formulario-section .button-contacto {
-  width: 150px;
-}

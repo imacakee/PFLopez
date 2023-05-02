@@ -4,6 +4,10 @@
   margin-top: 20px;
   @include flex($justify: center, $direction: column, $gap: 20px);
 
+  @include responsive($tablet) {
+    width: 100%;
+  }
+
   .filtro-bar {
     @include flex();
     font-size: 30px;
@@ -31,42 +35,46 @@
   .catalogo-container {
     @include grid($columns: repeat(4, auto), $rows: repeat(3, 400px));
 
+    @include responsive($desktop-sm) {
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: unset;
+      gap: 25px;
+    }
+    
+    @include responsive($tablet) {
+      grid-template-columns: repeat(2, auto);
+    }
+    
+    @include responsive($mobile) {
+      grid-template-columns: auto;
+    }
+
     .catalogo-text {
-      @include flex($direction: column, $align: center);
+      @include flex($direction: column, $align: center, $gap: 10px);
 
       p {
         width: 250px;
         text-align: justify;
+
+        @include responsive($tablet) {
+          width: 80%;
+          font-size: 12px;
+        }
       }
       img {
         width: 250px;
         height: 250px;
         object-fit: cover;
+
+        @include responsive($tablet) {
+          width: 80%;
+          height: 200px;
+        }
+        
+        @include responsive($mobile){
+          height: 250px;
+        } 
       }
-    }
-  }
-
-  @include responsive($tablet) {
-    width: 100%;
-
-    .catalogo-container {
-      @include grid($columns: auto auto, $rows: unset, $gap: 25px);
-
-      img {
-        width: 150px;
-        height: 200px;
-      }
-
-      p {
-        width: 150px;
-        font-size: 12px;
-      }
-    }
-  }
-
-  @include responsive($mobile) {
-    .catalogo-container {
-      @include grid();
     }
   }
 }

@@ -17,4 +17,5 @@
     display: grid;
     grid-template-columns: $columns;
     grid-template-rows: $rows;
+    gap: $gap;
 }

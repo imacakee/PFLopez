@@ -102,6 +102,11 @@ main {
   flex: 0 1 auto;
   gap: 20px;
 }
+@media screen and (max-width: 720px) {
+  .catalogo-section {
+    width: 100%;
+  }
+}
 .catalogo-section .filtro-bar {
   display: flex;
   flex-direction: row;
@@ -136,6 +141,24 @@ main {
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-template-rows: repeat(3, 400px);
+  gap: 0;
+}
+@media screen and (max-width: 1400px) {
+  .catalogo-section .catalogo-container {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: unset;
+    gap: 25px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .catalogo-section .catalogo-container {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media screen and (max-width: 530px) {
+  .catalogo-section .catalogo-container {
+    grid-template-columns: auto;
+  }
 }
 .catalogo-section .catalogo-container .catalogo-text {
   display: flex;
@@ -143,11 +166,17 @@ main {
   justify-content: flex-start;
   align-items: center;
   flex: 0 1 auto;
-  gap: 0px;
+  gap: 10px;
 }
 .catalogo-section .catalogo-container .catalogo-text p {
   width: 250px;
   text-align: justify;
+}
+@media screen and (max-width: 720px) {
+  .catalogo-section .catalogo-container .catalogo-text p {
+    width: 80%;
+    font-size: 12px;
+  }
 }
 .catalogo-section .catalogo-container .catalogo-text img {
   width: 250px;
@@ -155,28 +184,14 @@ main {
   object-fit: cover;
 }
 @media screen and (max-width: 720px) {
-  .catalogo-section {
-    width: 100%;
-  }
-  .catalogo-section .catalogo-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: unset;
-  }
-  .catalogo-section .catalogo-container img {
-    width: 150px;
+  .catalogo-section .catalogo-container .catalogo-text img {
+    width: 80%;
     height: 200px;
-  }
-  .catalogo-section .catalogo-container p {
-    width: 150px;
-    font-size: 12px;
   }
 }
 @media screen and (max-width: 530px) {
-  .catalogo-section .catalogo-container {
-    display: grid;
-    grid-template-columns: none;
-    grid-template-rows: none;
+  .catalogo-section .catalogo-container .catalogo-text img {
+    height: 250px;
   }
 }
 
@@ -234,16 +249,12 @@ main {
 .formulario-donaciones-sec form {
   width: 60%;
 }
-
-.input-button-donaciones {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 20px;
+.formulario-donaciones-sec button {
+  background-color: rgb(122, 122, 13);
+  border: none;
 }
-
-.formulario-donaciones-sec .button-donaciones {
-  width: 150px;
+.formulario-donaciones-sec button:hover {
+  background-color: rgb(81, 81, 27);
 }
 
 .nosotras-section-container {
@@ -346,20 +357,12 @@ main {
 .formulario-section form {
   width: 60%;
 }
-
-.input-button-contacto {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: normal;
-  flex: 0 1 auto;
-  gap: 0px;
-  padding-right: 20px;
+.formulario-section button {
+  background-color: rgb(122, 122, 13);
+  border: none;
 }
-
-.formulario-section .button-contacto {
-  width: 150px;
+.formulario-section button:hover {
+  background-color: rgb(81, 81, 27);
 }
 
 footer {
